@@ -1,7 +1,7 @@
 import de.bezier.guido.*;
 //Declare and initialize constants NUM_ROWS and NUM_COLS = 20
-private Life[][] buttons; //2d array of Life buttons each representing one cell
-private boolean[][] buffer; //2d array of booleans to store state of buttons array
+private Life[][] buttons; //2d array of minesweeper buttons
+private boolean[][] buffer; //2d array of booleans to store state of Life grid
 private boolean running = true; //used to start and stop program
 
 void setup () {
@@ -73,7 +73,7 @@ public class Life {
     if (alive != true)
       fill(0);
     else 
-      fill( 150 );
+    fill( 150 );
     rect(x, y, width, height);
   }
   public boolean getLife() {
