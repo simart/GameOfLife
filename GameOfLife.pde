@@ -4,7 +4,7 @@ private Life[][] buttons; //2d array of minesweeper buttons
 private boolean[][] buffer; //2d array of booleans to store state of Life grid
 private boolean running = true; //used to start and stop program
 
-void setup () {
+public void setup () {
   size(400, 400);
 
   // make the manager
